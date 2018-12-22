@@ -29,21 +29,34 @@ end
 
 def move(board, index, token = "X")
   board[index] = token
+<<<<<<< HEAD
+=======
+  display_board(board)
+>>>>>>> e21e586af0f7cbc21289294130941c2bc950f1a8
 end
 
 def turn(board)
   puts "Please enter 1-9:"
   user_input = gets.strip 
   index = input_to_index(user_input) 
+<<<<<<< HEAD
   if valid_move?(board, index)
     true
     move(board, index, token = "X")
     display_board(board)
+=======
+  if valid_move?(board, index, token = "X")
+    true
+>>>>>>> e21e586af0f7cbc21289294130941c2bc950f1a8
   else
     puts "Invalid move."
     puts "Please try again."
     turn(board)
   end
+<<<<<<< HEAD
+=======
+  display_board(board)
+>>>>>>> e21e586af0f7cbc21289294130941c2bc950f1a8
 end
 
 
